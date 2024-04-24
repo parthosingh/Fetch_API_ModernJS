@@ -1,0 +1,20 @@
+{
+ "Student" : [
+    {
+    "Username" : "Shubham",
+    "emailID" : "sbubhamsingh@gmail.com",
+    "img":"https://cdn.vectorstock.com/i/2000v/98/56/cute-little-boy-cartoon-vector-21539856.avif"
+    },
+    {
+        "Username" : "Partho",
+        "emailID" : "parthosingh@gmail.com",
+        "img":"https://img.freepik.com/premium-vector/cute-girl-hugging-little-kitty-illustration_102385-543.jpg"
+    },
+    {
+        "Username" : "Sahil",
+        "emailID" : "sahilsingh@gmail.com",
+        "img":"https://i.pinimg.com/736x/83/03/5b/83035b6380e83d77b06b2dd2e8668d03.jpg"
+    }
+ ] 
+ 
+  }

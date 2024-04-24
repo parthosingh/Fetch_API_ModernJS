@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="container">
+
+    </div>
+</body>
+<script>
+  let container = document.querySelector("#container");
+
+  async function getData(URL){
+   let res = await fetch(URL)
+   let data = await res.json()
+
+   console.log(data)
+    showData(data)
+  }
+
+  function showData(arr){
+    container.innerHTML = ""
+    arr.forEach(function(ele, i){
+    let div = document.createElement("div");
+
+    let title = document.createElement("p");
+    title.innerHTML = `<h2>The title of Object is : ${ele.title} </h2> `
+
+    let userId = document.createElement("p");
+    userId.innerHTML = `<h2> The UserId is : ${ele.userId}</h2> `
+    userId.style.color = "red";
+    
+    div.append(title, userId)
+
+    container.append(div)
+    })
+  }
+
+  getData("https://jsonplaceholder.typicode.com/todos")
+</script>
+</html>
